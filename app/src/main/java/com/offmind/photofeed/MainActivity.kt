@@ -15,6 +15,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val vm = koinViewModel<PhotoFeedViewModel>()
             PhotoFeedTheme {
+                // A surface container using the 'background' color from the theme
                 PhotoFeedScreen(vm)
             }
         }
